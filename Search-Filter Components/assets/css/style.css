@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+body{
+    background:#303236;
+    font-family:'Mulish', sans-serif;
+}
+
+/*Component-Search Component-Container*/
+.component-container{
+    background: #3d3f43;
+    border-radius: 8px;
+    width:250px;
+    margin:25px;
+    padding:40px 45px;
+}
+.component-search form{
+position:relative;
+margin-bottom:30px;
+}
+.component-search input[type="text"]{
+    background:url(../img/search_FILL0_wght400_GRAD0_opsz48.svg) no-repeat left #303236;
+    background-size: 25px;
+    font-size:16px;
+    margin:10px;
+    padding:0 20px;
+    width:75%;
+    height:50px;
+    color:#fff;
+    border-radius:15px;
+    border:none;
+    appearance: none;
+    caret-color: red;
+    padding-left:53px;
+}
+.component-search input::placeholder{
+    color:rgba(#fff .5);
+    opacity:0.6;
+}
+.component-search input:focus{
+    outline:0;
+}
+.component-search h6{
+    color:white;
+    font-size:20px;
+    padding:10px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+.component-search ul{
+    margin-top:13px;
+    margin-bottom:-7px;
+    list-style:none;
+}
+.component-search li,a{
+    font-size:16px;
+    display:block;
+    text-decoration: none;
+    margin-left:-15px;
+    padding:7px 0;
+    color:white;
+}
+.component-search li:last-child{
+    padding-bottom:15px;
+}
+.component-search a:hover{
+    color:#2ccdea;
+    font-weight:bold;
+}
+.component-search .active a{
+    color:#2ccdea;  
+}
+
+/*Component Filter Search */
+.component-filter-search{
+    background: #3d3f43;
+    border-radius: 15px;
+    margin:25px;
+    width:850px;
+}
+.component-filter-search form{
+    padding:14px;
+    height:68px;  
+    display:flex;    
+}
+.component-filter-search .input{
+display: flex;
+align-items: center;
+flex:1;
+}
+.component-filter-search .input input{
+border:none;
+font-size:16px;
+color:#fff;
+caret-color: red;
+padding-left:53px;
+width:100%;
+height:40px;
+background:url(../img/search_FILL0_wght400_GRAD0_opsz48.svg) no-repeat left transparent;
+border-radius: 5px;
+background-size: 25px;
+padding:0 30px;
+}
+.component-filter-search .input input:focus-within{
+    border-color:rebeccapurple;
+}
+.component-filter-search::placeholder{
+    color:rgba(#fff .5);
+}
+.component-filter-search ul{
+display:flex; 
+list-style:none;
+margin-left:15px;
+}
+.component-filter-search ul li{
+line-height:40px;
+padding:0 25px;
+color:#fff;
+margin:0 20px;
+}
+
+.component-filter-search ul li input{
+    display:none;
+}
+.components-filter-search li .text{
+display:block;
+height:40px;
+padding: 0 20px;
+font-size:16px;
+text-align: center;
+border-radius: 40px;
+color:#fff;
+cursor:pointer;
+
+}
+.component-filter-search input[type="radio"]{
+    display:none;
+}
+.component-filter-search input:checked + .text{
+    background-color:#303236;
+    color:#2ccdea;
+    padding:10px 30px;
+    border-radius:25px;
+    transition: 1.5s background-color, 1.5s color;
+}
+
+/*Component Filters*/
+.component-filters{
+    background-color:#3d3f43;
+    border-radius: 15px;
+    padding:40px 45px;
+    margin:25px;
+    width:468px;
+    box-shadow:0 15px 25px 0 #202125;
+}
+ .component-filters form ul li{
+list-style: none;    
+display:flex;
+align-items: center;
+}
+.component-filters form ul li:not(:last-child){
+margin-bottom:30px;
+ }
+ .filter-button {
+  border-top:2px solid #303236;
+    
+}
+.filter-button a,button{
+margin-top:25px;
+margin-left:5px;
+}
+.filter-button a{
+    color:rgba(#fff 0.5) ;
+    opacity:0.6;
+    text-decoration: none;
+    font-size:16px;
+}
+.filter-button a:hover{
+    color:#fff;
+    opacity: 1;
+}
+
+.component-filters button{
+border-radius:40px;
+padding:10px 30px;
+border:none;
+background: linear-gradient(to right, #31a5d9, #1e96a0);
+font-size:16px;
+color:white;
+text-align:center;
+font-weight:bold;
+display:flex;
+align-items: center;
+margin-left:auto;
+font-family: 'Mulish' ,sans-serif;
+box-shadow:0px 7px 10px 0px rgba(#2b2d30, .5);
+}
+
+.key{
+    width:100px;
+}
+.value{
+    flex:1;
+
+}
+.value select{
+    background: url(../img/expand-more.svg) no-repeat right  #303236 ;
+    background-size: 25px; 
+    background-position:calc(100% - 15px) center; /*beton yetmez beton*/
+    color:#fff;
+    cursor:pointer;
+}
+.value input ,select{
+    appearance: none;
+    border:none;
+    width:100%;
+    height:50px;
+    background: #303236;
+    color:#fff;
+    border-radius: 5px;
+    font-size:16px;
+    padding-left:0 20px;
+}
+.value input ,select:focus{
+outline:0;
+}
+.value input, select::placeholder{
+    color:rgba(#fff .5);
+}
